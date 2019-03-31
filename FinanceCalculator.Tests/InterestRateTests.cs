@@ -3,9 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using FinanceCalculator.Calculators;
 using NUnit.Framework;
 
-namespace FinanceCalculator.Tests2
+namespace FinanceCalculator.Tests
 {
     [TestFixture]
     public class InterestRateTests

@@ -1,11 +1,11 @@
-﻿using InterestRateCalculator.Interfaces;
+﻿using FinanceCalculator.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace InterestRateCalculator.Calculators
+namespace FinanceCalculator.Calculators
 {
     public class InterestRate : IInterestRate
     {

@@ -51,7 +51,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\FinanceCalculator\FinanceCalculator.csproj">
-      <Project>{BC271068-9DF8-47D6-BD39-08489E1E3323}</Project>
+      <Project>{bc271068-9df8-47d6-bd39-08489e1e3323}</Project>
       <Name>FinanceCalculator</Name>
     </ProjectReference>
   </ItemGroup>
