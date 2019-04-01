@@ -18,9 +18,15 @@ namespace FinanceCalculator.Calculators
             double balance = 0;
             double result = 0;
             if (double.TryParse(input, out balance))
-                 result = Calculate(balance);
+            {
+                result = Calculate(balance);
+                Console.WriteLine($"Your interest total will amount to: {result.ToString()}");
+            }
+            else
+            {
+                Console.WriteLine($"You did not enter a valid balance (double expected).");
+            }
 
-            Console.WriteLine($"Your interest total will amount to: {result.ToString()}");
         }
 
         public double Calculate(double balance)
