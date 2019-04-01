@@ -11,6 +11,7 @@ namespace FinanceCalculator
     {
         static void Main(string[] args)
         {
+            // Generic console for selecting particular finance calculator
             Console.WriteLine("Financial Calculator");
             Console.WriteLine("Please select a calculator:");
             Console.WriteLine("1. Calculate Interest Rates");

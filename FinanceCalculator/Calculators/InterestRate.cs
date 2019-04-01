@@ -11,6 +11,7 @@ namespace FinanceCalculator.Calculators
     {
         public void Run()
         {
+            // Setup parameters required
             Console.WriteLine("Provide a balance:");
             var input = Console.ReadLine();
             double result = Calculate(double.Parse(input));
@@ -21,19 +22,24 @@ namespace FinanceCalculator.Calculators
         {
             double interest = 0;
 
+            // 0 < balance < 1000 : interest = 1% of balance
             if (balance > 0 && balance < 1000)
                 interest = balance * 0.01;
 
-            if (balance >= 1000 && balance < 5000)
+            // 1,000 <= balance < 5,000 : interest = 1.5% of balance
+            else if (balance >= 1000 && balance < 5000)
                 interest = balance * 0.015;
 
-            if (balance >= 5000 && balance < 10000)
+            // 5,000 <= balance < 10,000 : interest = 2% of balance
+            else if (balance >= 5000 && balance < 10000)
                 interest = balance * 0.02;
 
-            if (balance >= 10000 && balance < 50000)
+            // 10,000 <= balance < 50,000 : interest = 2.5% of balance
+            else if (balance >= 10000 && balance < 50000)
                 interest = balance * 0.025;
 
-            if (balance >= 50000)
+            // balance >= 50,000 : interest = 3% of balance
+            else if (balance >= 50000)
                 interest = balance * 0.03;
 
             // If no brackets are met then it must be less than or equal to zero
