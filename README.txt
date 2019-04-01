@@ -2,7 +2,7 @@
 
 --Assumptions--
 Rounding to 2 decimal places with 'to even' midpoint rounding
-A zero or negative value will result in zero interestS
+A zero or negative value will result in zero interest
 
 --Tools--
 .NET 4.0.3 framework
