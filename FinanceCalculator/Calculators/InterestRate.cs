@@ -14,8 +14,13 @@ namespace FinanceCalculator.Calculators
             // Setup parameters required
             Console.WriteLine("Provide a balance:");
             var input = Console.ReadLine();
-            double result = Calculate(double.Parse(input));
-            Console.WriteLine($"Your interest total will amount to: {result}");
+
+            double balance = 0;
+            double result = 0;
+            if (double.TryParse(input, out balance))
+                 result = Calculate(balance);
+
+            Console.WriteLine($"Your interest total will amount to: {result.ToString()}");
         }
 
         public double Calculate(double balance)
